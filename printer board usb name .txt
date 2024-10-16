@@ -1,2 +1,6 @@
 Bus 001 Device 006: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
 usb-Klipper_stm32h743xx_12345-if00
+
+
+
+CHANGING TO USE GPIO PINS INSTED OF USB  
