@@ -1,7 +1,7 @@
 [server]
 host: 0.0.0.0
 port: 7125
-klippy_uds_address: /home/pi/printer_data/comms/klippy.sock
+klippy_uds_address: /home/daniel/printer_data/comms/klippy.sock
 
 [authorization]
 trusted_clients:
@@ -28,3 +28,16 @@ cors_domains:
 [update_manager]
 channel: dev
 refresh_interval: 168
+
+[update_manager mainsail]
+path: /home/daniel/mainsail
+repo: mainsail-crew/mainsail
+channel: stable
+type: web
+
+[update_manager mainsail-config]
+managed_services: klipper
+origin: https://github.com/mainsail-crew/mainsail-config.git
+path: /home/daniel/mainsail-config
+primary_branch: master
+type: git_repo
